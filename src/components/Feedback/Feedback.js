@@ -20,14 +20,14 @@ class Feedback extends React.Component {
             className={s.link}
             href="https://t.me/webstyle"
           >
-            Ask a question
+            Савол бериш
           </a>
           <span className={s.spacer}>|</span>
           <a
             className={s.link}
-            href="https://github.com/kriasoft/react-starter-kit/issues/new"
+            href="https://github.com/JavaScriptUz/javascript.uz/issues/new"
           >
-            Report an issue
+            Муаммо хақида хабар бериш
           </a>
         </div>
       </div>
