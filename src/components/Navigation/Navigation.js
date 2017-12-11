@@ -27,9 +27,9 @@ class Navigation extends React.Component {
           Алоқа
         </Link>
         <span className={s.spacer}> | </span>
-        <Link className={cx(s.link, s.highlight)} to="https://github.com/JavaScriptUz/javascript.uz">
+        <a className={cx(s.link, s.highlight)} target={'_blank'} href="https://github.com/JavaScriptUz/javascript.uz">
           GitHub
-        </Link>
+        </a>
       </div>
     );
   }
