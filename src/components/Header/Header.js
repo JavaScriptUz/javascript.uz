@@ -28,11 +28,10 @@ class Header extends React.Component {
               height="38"
               alt="JavaScript"
             />
-            <span className={s.brandTxt}>JAVASCRIPT.UZ</span>
           </Link>
           <div className={s.banner}>
-            <h1 className={s.bannerTitle}>React</h1>
-            <p className={s.bannerDesc}>Complex web apps made easy</p>
+            <h1 className={s.bannerTitle}>JavaScript</h1>
+            <p className={s.bannerDesc}>Ўзбекона open source лойиха</p>
           </div>
         </div>
       </div>
