@@ -107,6 +107,10 @@ app.use(
   })),
 );
 
+app.get('/feed', (req, res) => {
+  res.json([{ title: 'news title', link: '/', content: 'some content' }]);
+});
+
 //
 // Register server-side rendering middleware
 // -----------------------------------------------------------------------------

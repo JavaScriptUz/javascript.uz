@@ -16,11 +16,8 @@ class Feedback extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <a
-            className={s.link}
-            href="https://t.me/webstyle"
-          >
-            Савол бериш
+          <a className={s.link} href="https://t.me/webstyle">
+            Админга савол бериш
           </a>
           <span className={s.spacer}>|</span>
           <a

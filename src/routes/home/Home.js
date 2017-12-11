@@ -28,35 +28,32 @@ class Home extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <article className={s.newsItem}>
-            <h1 className={s.newsTitle}>
-              Салом!!!
-            </h1>
-            <div className={s.newsDesc}>Менинг исмим Фаррух! Бир неча йиллардан бери JavaScript дастурлаш тилида
-              код ёзаман. Узбек тилида очиқ кодли дастулар бўлмаганлиги сабабли, ўзим бўш вақтимда шу лойихани бошладим.
+            <h1 className={s.newsTitle}>Салом!!!</h1>
+            <div className={s.newsDesc}>
+              Менинг исмим Фаррух! Бир неча йиллардан бери JavaScript дастурлаш
+              тилида код ёзаман. Узбек тилида очиқ кодли дастулар бўлмаганлиги
+              сабабли, ўзим бўш вақтимда шу лойихани бошладим.
             </div>
           </article>
         </div>
+
+        <div className={s.container}>
+          <h1>Нима гаплар?</h1>
+          {this.props.news.map(item => (
+            <article key={item.link} className={s.newsItem}>
+              <h1 className={s.newsTitle}>
+                <a href={item.link}>{item.title}</a>
+              </h1>
+              <div
+                className={s.newsDesc}
+                // eslint-disable-next-line react/no-danger
+                dangerouslySetInnerHTML={{ __html: item.content }}
+              />
+            </article>
+          ))}
+        </div>
       </div>
-    )
-    // return (
-    //   <div className={s.root}>
-    //     <div className={s.container}>
-    //       <h1>React.js News</h1>
-    //       {this.props.news.map(item => (
-    //         <article key={item.link} className={s.newsItem}>
-    //           <h1 className={s.newsTitle}>
-    //             <a href={item.link}>{item.title}</a>
-    //           </h1>
-    //           <div
-    //             className={s.newsDesc}
-    //             // eslint-disable-next-line react/no-danger
-    //             dangerouslySetInnerHTML={{ __html: item.content }}
-    //           />
-    //         </article>
-    //       ))}
-    //     </div>
-    //   </div>
-    // );
+    );
   }
 }
 
