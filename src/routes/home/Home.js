@@ -29,10 +29,10 @@ class Home extends React.Component {
         <div className={s.container}>
           <article className={s.newsItem}>
             <h1 className={s.newsTitle}>
-              Салом!!
+              Салом!!!
             </h1>
             <div className={s.newsDesc}>Менинг исмим Фаррух! Бир неча йиллардан бери JavaScript дастурлаш тилида
-              ёзаман.
+              код ёзаман. Узбек тилида очиқ кодли дастулар бўлмаганлиги сабабли, ўзим бўш вақтимда шу лойихани бошладим.
             </div>
           </article>
         </div>
