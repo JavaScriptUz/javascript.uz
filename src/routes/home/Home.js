@@ -35,9 +35,7 @@ class Home extends React.Component {
               сабабли, ўзим бўш вақтимда шу лойихани бошладим.
             </div>
           </article>
-        </div>
 
-        <div className={s.container}>
           <h1>Нима гаплар?</h1>
           {this.props.news.map(item => (
             <article key={item.link} className={s.newsItem}>

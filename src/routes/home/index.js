@@ -8,12 +8,11 @@
  */
 
 import React from 'react';
-import Fetch from 'node-fetch';
 import Home from './Home';
 import Layout from '../../components/Layout';
 
-async function action() {
-  const resp = await Fetch('http://localhost:3000/feed');
+async function action({ fetch }) {
+  const resp = await fetch('http://localhost:3000/feed');
   const data = await resp.json();
   return {
     chunks: ['home'],
